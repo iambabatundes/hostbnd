@@ -44,6 +44,10 @@ body {
   .mains {
     margin-bottom: 20px;
   }
+
+  .logo {
+    align-self: center;
+  }
 }
 
 /* @media screen and (max-width: 992px) {
@@ -76,4 +80,8 @@ body {
 .col {
   margin-right: 0px;
   padding-right: 0px;
+}
+
+.input {
+  width: fit-content;
 }

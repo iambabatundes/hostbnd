@@ -4,13 +4,17 @@ import Like from "./like";
 import Card from "./common/card";
 import "../App.css";
 
-function PropertyList({ properties, onLike, onRated }) {
+function PropertyList({ properties, onClick }) {
   // const [rating, setRating] = React.useState(2.9);
 
   return (
-    <div className="mains grid grid--1x3 grid--5 m-5">
+    <div className="mains grid grid--1x3 grid--5 m-5 mt-2" onClick={onClick}>
       {properties.map((property) => (
-        <div className="card mb-3" style={{ border: 0, borderRadius: "10px" }}>
+        <div
+          key={property._id}
+          className="card mb-3"
+          style={{ border: 0, borderRadius: "10px" }}
+        >
           <img
             src={property.image}
             className=" card-img-top"
@@ -21,7 +25,7 @@ function PropertyList({ properties, onLike, onRated }) {
               <div className="">
                 {property.tag && (
                   <span
-                    className="card-subtitle badge bg-primary  text-uppercase px-2"
+                    className="card-subtitle badge bg-danger  text-uppercase px-2"
                     style={{ width: "6rem" }}
                   >
                     {property.tag}
@@ -38,14 +42,17 @@ function PropertyList({ properties, onLike, onRated }) {
                 <Rating />
               </span>
             </div>
-            <h4 className="card-title mt-2">{property.title}</h4>
+            <h5 className="card-title mt-2">{property.title}</h5>
             <p card-subtitle text-muted>
               {property.description}
             </p>
 
-            <button type="button" className="btn btn-outline-primary btn-lg">
-              {property.price}
-            </button>
+            <div className="d-flex align-items-center flex-row justify-content-between mt-2">
+              <span className=" card-subtitle text-muted">
+                {property.location}
+              </span>
+              <span className="btn btn-outline-primary">{property.price}</span>
+            </div>
           </div>
         </div>
       ))}

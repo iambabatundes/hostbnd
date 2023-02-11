@@ -6,6 +6,7 @@ import "../App.css";
 
 function Property() {
   const [properties, setProperties] = useState(getProperties());
+  const [searchQuery, setSearchQuery] = useState(properties.location);
 
   // function handleLiked(property) {
   //   const propertyId = [...properties];
@@ -15,24 +16,51 @@ function Property() {
   //   setProperties(propertyId);
   // }
 
+  function handleClick() {}
+
   return (
     <>
-      <nav className="navbar bg-body-tertiary">
+      <nav className="navbar bg-body-tertiary mt-4">
         <div className="container-fluid">
-          <a href="" className="navbar-brand" style={{ padding: 20 }}>
+          <a href="" className="logo navbar-brand" style={{ padding: 20 }}>
             Windbnb
           </a>
-          <form className="d-flex">
-            <input
-              type="text"
-              className="form-control me-2"
-              placeholder="Search..."
-            />
-          </form>
+
+          <div
+            className="input-group input-group-lg border rounded-pill 
+            p-2 border-secondary-subtle shadow mb-3 bg-body-tertiary align-items-center flex-row"
+            style={{
+              width: "fit-content",
+              padding: 20,
+            }}
+          >
+            <button
+              className="btn btn-outline border-end link-secondary"
+              style={{ fontSize: "1rem", border: "none" }}
+            >
+              Ikaje, Lagos
+            </button>
+            <button
+              className="btn btn-outline border-end text-sm text-muted link-secondary"
+              style={{ fontSize: "1rem", border: "none" }}
+            >
+              Add Guest
+            </button>
+            <button
+              className="btn btn-outline"
+              style={{ color: "red", border: "none" }}
+            >
+              <i className="fa fa-search link-danger"></i>
+            </button>
+          </div>
         </div>
       </nav>
+      <div className="container-fluid d-flex align-items-center flex-row justify-content-between">
+        <h3 className="font-poppins m-3 fw-bold">Stay in Nigeria</h3>
+        <span className="m-4">20+ Stay</span>
+      </div>
 
-      <PropertyList properties={properties} />
+      <PropertyList properties={properties} onClick={handleClick} />
     </>
   );
 }
