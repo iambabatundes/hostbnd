@@ -1,58 +1,25 @@
 import React from "react";
-import Rating from "./common/rating";
+import { useParams } from "react-router-dom";
 
-function propertyDetails({ property, onClick }) {
+function PropertyDetails({ properties }) {
+  const { id } = useParams();
+  properties.find((property) => property._id === id);
+
   return (
-    <div className="modal fade" tabIndex="-1" onClick={onClick}>
-      <div className="modal-content">
-        <div className="modal-header">
-          <h5 className="modal-title">{property.title}</h5>
-          <button type="button" className="btn-close">
-            {onClick}
-          </button>
-        </div>
-        <div className="modal-body">
-          <img src={property.image} />
-          <div className="">
-            <div className="d-flex flex-row justify-content-between mt-2">
-              <div className="">
-                {property.tag && (
-                  <span
-                    className={
-                      property.tag === "Executive"
-                        ? "bg-danger card-subtitle badge text-uppercase px-2"
-                        : "bg-primary card-subtitle badge text-uppercase px-2"
-                    }
-                    style={{ width: "6rem" }}
-                  >
-                    {property.tag}
-                  </span>
-                )}
-                <span
-                  className="card-subtitle text-muted"
-                  style={{ paddingLeft: "1rem" }}
-                >
-                  {property.subTitle}
-                </span>
-              </div>
-              <span className="card-subtitle">
-                <Rating />
-              </span>
-            </div>
-            <p card-subtitle text-muted>
-              {property.description}
-            </p>
-            <div className="d-flex align-items-center flex-row justify-content-between mt-2">
-              <span className=" card-subtitle text-muted">
-                {property.location}
-              </span>
-              <span className="btn btn-outline-primary">{property.price}</span>
-            </div>
+    <header className="container mt-4 grid">
+      <div className="row m-1 ">
+        <div className="col-md-8 shadow-sm p-1 bg-body-tertiary rounded">
+          <div className="row">
+            <div className="col-md-4">column</div>
+            <div className="col-md-8">column</div>
           </div>
         </div>
+        <div className="col-md-4 shadow-sm p-1 bg-body-tertiary rounded">
+          column
+        </div>
       </div>
-    </div>
+    </header>
   );
 }
 
-export default propertyDetails;
+export default PropertyDetails;

@@ -8,9 +8,6 @@ function NavBar() {
         <NavLink className="navbar-brand" to="/">
           Home
         </NavLink>
-        <NavLink className="" to="/properties">
-          Property
-        </NavLink>
       </div>
     </nav>
   );

@@ -11,8 +11,24 @@ const properties = [
     isRented: true,
     guest: 4,
     price: "$150",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    images: {
+      img1: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      img2: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      img3: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    },
+
+    productContent: `Cozy and comfortable, this room apartment is the perfect retreat from the hustle and bustle of city life. With a spacious layout and modern amenities, you'll have everything you need for a relaxing stay. Soak up the sun on the private balcony or curl up on the plush sofa and watch your favorite show. Book now and experience the best of both worlds!
+
+    Escape to your own private oasis in this stunning room apartment. With breathtaking views and a stylish, contemporary design, you'll feel right at home. From the fully equipped kitchen to the luxurious bedding, every detail has been carefully thought out to provide you with the ultimate comfort and convenience. Book now and treat yourself to a much-needed break.
+    
+    Step into luxury at this beautiful room apartment. With elegant furnishings and a warm, inviting atmosphere, you'll have everything you need for a truly unforgettable stay. From the sparkling clean bathroom to the plush bed, every aspect of this apartment has been designed to provide you with the ultimate comfort and relaxation. Book now and treat yourself to the ultimate escape.
+    
+    Experience the height of comfort and style in this beautifully appointed room apartment. With a spacious layout and tasteful decor, you'll feel right at home from the moment you step inside. Whether you're cooking up a storm in the fully equipped kitchen or lounging on the sofa, you'll love every moment spent in this chic and inviting space. Book now and start your next adventure in style.
+    
+    Tucked away in a quiet corner of the city, this room apartment is the perfect place to unwind and recharge. With comfortable furnishings and a soothing color palette, you'll love coming home to this peaceful retreat. From the private balcony to the cozy bed, every aspect of this apartment has been designed to provide you with the ultimate comfort and relaxation. Book now and get ready for a truly relaxing stay.
+    `,
   },
   {
     _id: "55908732fgcd74802",
@@ -25,7 +41,7 @@ const properties = [
     rated: true,
     guest: 5,
     price: "$520",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80",
   },
   {
@@ -39,7 +55,7 @@ const properties = [
     location: "Lekki, Lagos",
     guest: 2,
     price: "$80",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
   },
   {
@@ -54,7 +70,7 @@ const properties = [
     rated: true,
     guest: 3,
     price: "$150",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=913&q=80",
   },
   {
@@ -67,7 +83,7 @@ const properties = [
     rated: true,
     guest: 4,
     price: "$250",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1432303492674-642e9d0944b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80",
   },
   {
@@ -82,7 +98,7 @@ const properties = [
     rated: true,
     guest: 2,
     price: "$40",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1560448205-17d3a46c84de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
   },
   {
@@ -95,7 +111,7 @@ const properties = [
     location: "Lekki, Lagos",
     guest: 5,
     price: "$3500",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
   },
   {
@@ -109,7 +125,7 @@ const properties = [
     rated: true,
     guest: 4,
     price: "$14000",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
   },
   {
@@ -124,7 +140,7 @@ const properties = [
     rated: true,
     guest: 5,
     price: "$2500",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1494203484021-3c454daf695d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
   },
   {
@@ -137,7 +153,7 @@ const properties = [
     location: "Lekki, Lagos",
     guest: 5,
     price: "$3500",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1558442074-3c19857bc1dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80",
   },
   {
@@ -151,7 +167,7 @@ const properties = [
     rated: true,
     guest: 3,
     price: "$1000",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1565183997392-2f6f122e5912?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
   },
   {
@@ -165,7 +181,7 @@ const properties = [
     rated: true,
     guest: 5,
     price: "$2500",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
   },
   {
@@ -178,7 +194,7 @@ const properties = [
     location: "Lekki, Lagos",
     guest: 5,
     price: "$3500",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1592928302636-c83cf1e1c887?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
   },
   {
@@ -192,7 +208,7 @@ const properties = [
     rated: true,
     guest: 6,
     price: "$1000",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
   },
   {
@@ -206,7 +222,7 @@ const properties = [
     rated: true,
     guest: 5,
     price: "$3500",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2065&q=80",
   },
   {
@@ -219,7 +235,7 @@ const properties = [
     location: "Lekki, Lagos",
     guest: 7,
     price: "$4500",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1558442074-3c19857bc1dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80",
   },
   {
@@ -233,7 +249,7 @@ const properties = [
     rated: true,
     guest: 2,
     price: "$2000",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1565183997392-2f6f122e5912?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
   },
   {
@@ -247,7 +263,7 @@ const properties = [
     rated: true,
     guest: 5,
     price: "$500",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
   },
   {
@@ -260,7 +276,7 @@ const properties = [
     location: "Lekki, Lagos",
     guest: 3,
     price: "$300",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1592928302636-c83cf1e1c887?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
   },
   {
@@ -275,7 +291,7 @@ const properties = [
     rated: true,
     guest: 4,
     price: "$100",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
   },
   {
@@ -289,7 +305,7 @@ const properties = [
     rated: true,
     guest: 3,
     price: "$250",
-    image:
+    thumbnail:
       "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2065&q=80",
   },
 ];

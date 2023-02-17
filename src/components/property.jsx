@@ -140,7 +140,7 @@ function Property() {
         <PropertyList
           selectedProperty={selectedProperty}
           properties={property}
-          onClick={handleClick}
+          handleClick={() => handleClick()}
           onClose={handleClose}
         />
 
