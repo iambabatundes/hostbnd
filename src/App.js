@@ -1,13 +1,21 @@
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Header from "./components/common/header";
-import SearchBox from "./components/common/searchBox";
+import Home from "./components/home";
+import NavBar from "./components/navBar";
 import Property from "./components/property";
 
-function App({ guests }) {
+function App() {
   return (
-    <main className="main">
-      <Property />
-    </main>
+    <>
+      <NavBar />
+      <main className="main">
+        <Routes>
+          <Route path="/properties" element={<Property />} />
+        </Routes>
+        <Property />
+      </main>
+    </>
   );
 }
 

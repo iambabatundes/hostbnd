@@ -1,21 +1,20 @@
 import React from "react";
 import Rating from "./common/rating";
 import "./common/Card.css";
+import PropertyDetails from "./propertyDetails";
 
-function PropertyList({ properties, onClick }) {
+function PropertyList({ properties, onClose, onClick, selectedProperty }) {
   return (
     <>
       {/* {properties.rented === true ? <h3 className="bg-primary">Rented</h3> : ""} */}
 
-      <div
-        className={`container mains grid grid--1x3 grid--5 mt-2 px-3`}
-        onClick={onClick}
-      >
+      <div className={`container mains grid grid--1x3 grid--5 mt-2 px-3`}>
         {properties.map((property) => (
           <div
             key={property._id}
             className="card mb-3"
-            style={{ border: 0, borderRadius: "10px" }}
+            style={{ border: 0, borderRadius: "10px", cursor: "pointer" }}
+            onClick={() => onClick(property)}
           >
             <div>
               {property.isRented ? (
@@ -77,6 +76,8 @@ function PropertyList({ properties, onClick }) {
           </div>
         ))}
       </div>
+
+      <PropertyDetails property={selectedProperty} onClick={onClose} />
     </>
   );
 }

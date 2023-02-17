@@ -2,7 +2,7 @@ const properties = [
   {
     _id: "55908732fgcd74801",
     title: "The lastest brown in the city",
-    subTitle: "Entire Appartment 6bed.",
+    subTitle: "6 Bedroom.",
     description:
       "With a spacious layout and modern amenities, you'll have everything you need for a relaxing stay....",
     tag: "Executive",
@@ -31,7 +31,7 @@ const properties = [
   {
     _id: "55908732fgcd74803",
     title: "Executive Room in Lagos Island",
-    subTitle: "Room and Palour Self",
+    subTitle: "Room & Palour Self",
     description:
       "Soak up the sun on the private balcony or curl up on the plush sofa and watch your favorite show. Book now and experience the best of both worlds!...",
     rated: true,
@@ -73,7 +73,7 @@ const properties = [
   {
     _id: "55908732fgcd74806",
     title: "Luxury Rooms in Lagos Mainland",
-    subTitle: "5 Rooms Appartment",
+    subTitle: "5 Bedrooms",
     description:
       "Step into luxury at this beautiful room apartment. With elegant furnishings and a warm, inviting atmosphere, you'll have everything you need for a truly unforgettable stay...",
     tag: "Luxury",

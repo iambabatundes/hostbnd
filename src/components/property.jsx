@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
+import "../App.css";
+
 import { getProperties } from "../services/properties";
 import PropertyList from "./propertyList";
 import Header from "./common/header";
 import HeaderBar from "./common/headerBar";
-import "../App.css";
 import SearchOpen from "./common/searchOpen";
 import Pagination from "./common/pagination";
 import { paginate } from "../utils/paginate";
+import Slider from "./common/slider";
 
 function Property() {
   const [properties, setProperties] = useState([]);
@@ -18,6 +20,7 @@ function Property() {
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(6);
   const [filteredProperties, setFilteredProperties] = useState([]);
+  const [selectedProperty, setSelectedProperty] = useState(null);
 
   let guests = adultGuests + childrenGuests;
 
@@ -89,7 +92,12 @@ function Property() {
     }
   }
 
-  function handleClick() {}
+  function handleClick(property) {
+    setSelectedProperty(property);
+  }
+  function handleClose() {
+    setSelectedProperty(null);
+  }
 
   return (
     <>
@@ -126,9 +134,15 @@ function Property() {
           guests={guests}
           guestMenu={guestMenu}
         />
+
         <HeaderBar properties={property} />
 
-        <PropertyList properties={property} onClick={handleClick} />
+        <PropertyList
+          selectedProperty={selectedProperty}
+          properties={property}
+          onClick={handleClick}
+          onClose={handleClose}
+        />
 
         <Pagination
           itemsCount={filteredProperties.length}
@@ -138,7 +152,7 @@ function Property() {
         />
       </div>
 
-      {/* {properties.length === 0 ? (
+      {filteredProperties.length === 0 ? (
         <div>
           <div>
             <h1>No Properties Found</h1>
@@ -146,7 +160,7 @@ function Property() {
         </div>
       ) : (
         ""
-      )} */}
+      )}
     </>
   );
 }
