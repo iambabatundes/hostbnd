@@ -1,7 +1,6 @@
 import React from "react";
 import Rating from "./common/rating";
 import "./common/Card.css";
-import PropertyDetails from "./propertyDetails";
 import { Link } from "react-router-dom";
 
 function PropertyList({ properties }) {

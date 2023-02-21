@@ -6,17 +6,43 @@ const properties = [
     description:
       "With a spacious layout and modern amenities, you'll have everything you need for a relaxing stay....",
     tag: "Executive",
+    date: Date.now,
+    condition: "Newly Build",
+    size: "6 Bedroom Flat",
+    furnishing: "Furnished",
+    pets: "Allowed Pets",
+    features: [
+      "Wardrobe",
+      "Air Conditioning",
+      "Dishwasher",
+      "Dining Area",
+      "Kitchen Cabinets",
+      "Microwave",
+      "Tiled Floor",
+      "Kitchen Shelf",
+      "Pre-Paid Meter",
+      "24-hour Electricity",
+      "CityView",
+    ],
     location: "V.I, Lagos",
     rated: true,
     isRented: true,
     guest: 4,
-    price: "$150",
+    percent: "-10%",
+    bid: 10,
+    discount: "120",
+    price: "150",
     thumbnail:
       "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     images: {
-      img1: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      img2: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      img3: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      image1:
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2053&q=80",
+      image2:
+        "https://images.unsplash.com/photo-1600585154084-4e5fe7c39198?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      image3:
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      // image4:
+      //   "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
     },
 
     productContent: `Cozy and comfortable, this room apartment is the perfect retreat from the hustle and bustle of city life. With a spacious layout and modern amenities, you'll have everything you need for a relaxing stay. Soak up the sun on the private balcony or curl up on the plush sofa and watch your favorite show. Book now and experience the best of both worlds!
@@ -30,6 +56,7 @@ const properties = [
     Tucked away in a quiet corner of the city, this room apartment is the perfect place to unwind and recharge. With comfortable furnishings and a soothing color palette, you'll love coming home to this peaceful retreat. From the private balcony to the cozy bed, every aspect of this apartment has been designed to provide you with the ultimate comfort and relaxation. Book now and get ready for a truly relaxing stay.
     `,
   },
+
   {
     _id: "55908732fgcd74802",
     title: "Nice Appartment in the center of Lagos",
@@ -39,6 +66,7 @@ const properties = [
     tag: "Super Host",
     location: "Island, Lagos",
     rated: true,
+    discount: "-5%",
     guest: 5,
     price: "$520",
     thumbnail:
