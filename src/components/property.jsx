@@ -18,7 +18,7 @@ function Property() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [location, setLocation] = useState("Ikeja, Lagos");
   const [currentPage, setCurrentPage] = useState(1);
-  const [pageSize, setPageSize] = useState(6);
+  const [pageSize, setPageSize] = useState(9);
   const [filteredProperties, setFilteredProperties] = useState([]);
   const [selectedProperty, setSelectedProperty] = useState(null);
 

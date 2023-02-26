@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getProperties } from "../services/properties";
+import CommentBox from "./commentBox";
 import "./common/Card.css";
 import Rating from "./common/rating";
 
@@ -171,7 +172,62 @@ function PropertyDetails() {
           </div>
         </div>
         <div className="col-md-3 shadow-sm p-1 bg-body-tertiary rounded">
-          column
+          {property.user ? (
+            <div className="d-flex justify-content-center">
+              <img
+                src={property.user.photo}
+                width="80"
+                height="80"
+                className="border shadow-sm p-1 bg-body-tertiary rounded-circle mt-2 mb-0"
+              />
+            </div>
+          ) : (
+            ""
+          )}
+
+          {property.user ? (
+            <h1 className="d-flex justify-content-center fs-4">
+              {property.user.name}
+            </h1>
+          ) : (
+            ""
+          )}
+
+          {property.user ? (
+            <h1 className="d-flex justify-content-center fs-4">
+              {property.user.phone}
+            </h1>
+          ) : (
+            ""
+          )}
+
+          {property.user ? (
+            <header className="d-flex justify-content-center">
+              <i class="fa fa-phone px-3 py-1" aria-hidden="true" />
+              <h1 className="fs-5">{property.user.email}</h1>
+            </header>
+          ) : (
+            ""
+          )}
+
+          {/* <header className="d-flex justify-content-center ">
+            <i class="fa fa-envelope-o py-1" aria-hidden="true"></i>
+
+            <h1 className="fs-5 px-2">{property.user.email}</h1>
+          </header> */}
+
+          <div className="d-flex justify-content-center">
+            <button className="btn btn-primary mt-2" style={{ width: "50%" }}>
+              Message
+            </button>
+          </div>
+          <span
+            className="fst-italic lh-sm wrapz"
+            style={{ fontSize: 9, lineHeight: 0 }}
+          >
+            Note: Make sure you chat with within reach, do not carry your chat
+            with an agent outside the website for easy tracking
+          </span>
         </div>
       </div>
 
@@ -234,19 +290,21 @@ function PropertyDetails() {
                 </div>
               </div>
             </div>
+
             <div className="col-md-5 border">
               <h1 className="fs-6 border-bottom text-uppercase">FEATURES</h1>
-              <ul className="lh-base">
-                <li>{property.features[0]}</li>
-                <li>{property.features[1]}</li>
-                <li>{property.features[2]}</li>
-                <li>{property.features[3]}</li>
-                <li>{property.features[4]}</li>
-                <li>{property.features[5]}</li>
-                <li>{property.features[6]}</li>
-                <li>{property.features[7]}</li>
-                <li>{property.features[8]}</li>
-              </ul>
+              {property.features && (
+                <ul className="lh-base">
+                  <li>{property.features[1]}</li>
+                  <li>{property.features[2]}</li>
+                  <li>{property.features[3]}</li>
+                  <li>{property.features[4]}</li>
+                  <li>{property.features[5]}</li>
+                  <li>{property.features[6]}</li>
+                  <li>{property.features[7]}</li>
+                  <li>{property.features[8]}</li>
+                </ul>
+              )}
             </div>
           </div>
         </div>
@@ -255,15 +313,15 @@ function PropertyDetails() {
         </div>
       </div>
 
-      <div className="row m-1 mt-5 mb-5">
+      {/* <div className="row m-1 mt-5 mb-5">
         <div className="col-md-9 shadow-sm p-2 bg-body-tertiary rounded ">
           <h1 className="fs-4 border-bottom">Comment</h1>
-          <p className="lh-base">Add Comment</p>
+          <CommentBox />
         </div>
         <div className="col-md-3 shadow-sm p-1 bg-body-tertiary rounded">
           column
         </div>
-      </div>
+      </div> */}
     </header>
   );
 }

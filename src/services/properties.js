@@ -55,6 +55,14 @@ const properties = [
     
     Tucked away in a quiet corner of the city, this room apartment is the perfect place to unwind and recharge. With comfortable furnishings and a soothing color palette, you'll love coming home to this peaceful retreat. From the private balcony to the cozy bed, every aspect of this apartment has been designed to provide you with the ultimate comfort and relaxation. Book now and get ready for a truly relaxing stay.
     `,
+
+    user: {
+      name: "Babatunde Emmanuel",
+      email: "emm@gmail.com",
+      phone: "8762323245",
+      photo:
+        "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+    },
   },
 
   {
