@@ -2,6 +2,7 @@ import React from "react";
 import SearchButton from "./searchButton";
 import Button from "./button";
 import { Link } from "react-router-dom";
+import mylogo from "../../hostLogo.svg";
 
 function Header({
   openMenu,
@@ -15,7 +16,7 @@ function Header({
   return (
     <header className="navbar bg-body-tertiary mt-4 container px-2">
       <Link to="/" className="logo navbar-brand">
-        Windbnb
+        <img src={mylogo} alt="Hostbnd logo" width="150" />
       </Link>
 
       <SearchButton className="">
