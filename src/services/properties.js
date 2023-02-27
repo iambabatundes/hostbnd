@@ -77,8 +77,29 @@ const properties = [
     discount: "-5%",
     guest: 5,
     price: "$520",
+    productContent: `Cozy and comfortable, this room apartment is the perfect retreat from the hustle and bustle of city life. With a spacious layout and modern amenities, you'll have everything you need for a relaxing stay. Soak up the sun on the private balcony or curl up on the plush sofa and watch your favorite show. Book now and experience the best of both worlds!`,
+
     thumbnail:
       "https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80",
+
+    images: {
+      image1:
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2053&q=80",
+      image2:
+        "https://images.unsplash.com/photo-1600585154084-4e5fe7c39198?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      image3:
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      // image4:
+      //   "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    },
+
+    user: {
+      name: "Babatunde Emmanuel",
+      email: "emm@gmail.com",
+      phone: "8762323245",
+      photo:
+        "https://images.unsplash.com/photo-1531123414780-f74242c2b052?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
+    },
   },
   {
     _id: "55908732fgcd74803",

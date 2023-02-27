@@ -10,7 +10,7 @@ function PropertyList({ properties }) {
         {properties.map((property) => (
           <div
             key={property._id}
-            className="card mb-3 bg-image hover-overlay hover-zoom hover-shadow ripple key"
+            className="card mb bg-image"
             style={{
               border: 0,
               borderRadius: "10px",
@@ -40,7 +40,7 @@ function PropertyList({ properties }) {
                   style={{ borderRadius: "10px 10px", marginBottom: "8px" }}
                 />
 
-                <div className="p-3 py-0 mb-3">
+                <div className="p- py-0 mb-3">
                   <div className="d-flex flex-row justify-content-between mt-2">
                     <div className="">
                       {property.tag && (

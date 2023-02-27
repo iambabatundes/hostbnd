@@ -1,6 +1,7 @@
 import React from "react";
 import SearchButton from "./searchButton";
 import Button from "./button";
+import { Link } from "react-router-dom";
 
 function Header({
   openMenu,
@@ -13,9 +14,10 @@ function Header({
 }) {
   return (
     <header className="navbar bg-body-tertiary mt-4 container px-2">
-      <a href="" className="logo navbar-brand">
+      <Link to="/" className="logo navbar-brand">
         Windbnb
-      </a>
+      </Link>
+
       <SearchButton className="">
         <Button
           onClick={() => {
@@ -45,6 +47,7 @@ function Header({
           <i className="fa fa-search link-danger"></i>
         </Button>
       </SearchButton>
+
       {/* <SearchButton location={location} guests={guests} /> */}
     </header>
   );

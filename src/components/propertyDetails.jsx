@@ -195,6 +195,7 @@ function PropertyDetails() {
 
           {property.user ? (
             <h1 className="d-flex justify-content-center fs-4">
+              <i class="fa fa-phone px-3 py-2 fs-6" aria-hidden="true" />
               {property.user.phone}
             </h1>
           ) : (
@@ -203,7 +204,7 @@ function PropertyDetails() {
 
           {property.user ? (
             <header className="d-flex justify-content-center">
-              <i class="fa fa-phone px-3 py-1" aria-hidden="true" />
+              <i class="fa fa-envelope-o py-1 px-3" aria-hidden="true"></i>
               <h1 className="fs-5">{property.user.email}</h1>
             </header>
           ) : (
